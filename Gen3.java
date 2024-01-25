@@ -1,13 +1,13 @@
 public class Gen3 {
     public static void main(String[] args) {
-        double min = Double.parseDouble(args[0]);
-		double max = Double.parseDouble(args[1]);
+        int min = Integer.parseInt(args[0]);
+		int max = Integer.parseInt(args[1]);
 		
-		double range = max - min;
+		int range = max - min;
 		
-		int rand1 = (int)((Math.random() * range) + min);
-		int rand2 = (int)((Math.random() * range) + min);
-		int rand3 = (int)((Math.random() * range) + min);
+		int rand1 = (int)(min + (Math.random() * range));
+		int rand2 = (int)(min + (Math.random() * range));
+		int rand3 = (int)(min + (Math.random() * range));
 		
 		System.out.println(rand1);
 		System.out.println(rand2);
