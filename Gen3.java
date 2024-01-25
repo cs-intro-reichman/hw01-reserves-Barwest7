@@ -5,9 +5,9 @@ public class Gen3 {
 		
 		int range = max - min;
 		
-		int rand1 = (int)(min + (Math.random() * range));
-		int rand2 = (int)(min + (Math.random() * range));
-		int rand3 = (int)(min + (Math.random() * range));
+		int rand1 = (int)(min + Math.random() * range);
+		int rand2 = (int)(min + Math.random() * range);
+		int rand3 = (int)(min + Math.random() * range);
 		
 		System.out.println(rand1);
 		System.out.println(rand2);
